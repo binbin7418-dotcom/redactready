@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RedactReady — True PDF Redaction with Leak Re-Check</title>
+<meta name="description" content="Batch-redact PDFs properly: text removed from the file, not covered up — then every output searched twice (text layer + raw content streams) and only passed with zero leaks. $29 one-time, fully offline.">
+<style>
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;margin:0;color:#1c2530;background:#f7f9fb;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:2rem;line-height:1.2;margin:.2em 0}
+  h2{margin-top:1.6em}
+  .sub{font-size:1.15rem;color:#43536a}
+  .cta{display:inline-block;background:#0f7b4d;color:#fff;padding:14px 26px;border-radius:8px;text-decoration:none;font-weight:600;margin:18px 0}
+  .card{background:#fff;border:1px solid #dde4ec;border-radius:10px;padding:18px 22px;margin:16px 0}
+  code{background:#eef2f6;padding:1px 6px;border-radius:4px}
+  ul{padding-left:1.2em}
+  .fine{color:#5a6a7f;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="fine">REDACTREADY · WINDOWS · ONE-TIME $29 · FULLY OFFLINE</p>
+  <h1>A black box over text is not redaction.</h1>
+  <p class="sub">If the text is still in the file, anyone can copy it back out — the failure behind real court-filing and FOIA leaks every year. RedactReady removes the content itself, in batch, then searches every output twice and only passes files with zero leaks. Your documents never leave your machine.</p>
+  <a class="cta" href="https://binbinster.gumroad.com/l/redactready-pdf-redaction-leak-check">Get RedactReady on Gumroad — $29</a>
+
+  <div class="card">
+    <h2>How it works</h2>
+    <ul>
+      <li>Drop in PDFs or a folder; list the terms — names, case numbers, IDs</li>
+      <li>Optional pattern redaction: email addresses, US SSN-shaped numbers</li>
+      <li>Matched text is deleted from the PDF content stream and painted black — removed, not covered</li>
+      <li>Outputs go to a new folder with a full report; originals are never modified</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>The two-channel leak re-check</h2>
+    <p>Every output is searched twice for every term: (1) the extracted-text layer, and (2) the raw content-stream bytes of every page, plain and hex-encoded — because text can hide where extractors don't look. Zero hits in both channels, or the file does not pass. Pages with no text layer (scans) are flagged SCAN-DETECTED, never passed silently: they need OCR first, and the report tells you so.</p>
+  </div>
+
+  <h2>Measured, not promised</h2>
+  <p>Seeded acceptance test: 9/9 checks passed. A document seeded with a name, a case ID, an email and an SSN-shaped number came back with zero leaks in both channels and its public text untouched — and a control file with text merely <em>covered</em> by a drawn rectangle was correctly caught by the checker.</p>
+
+  <h2>Honest limits</h2>
+  <ul>
+    <li>Text-based PDFs only; scanned pages are flagged, not processed</li>
+    <li>Terms baked into images or vector outlines are out of reach of any text redactor — the report says so rather than implying coverage</li>
+    <li>Redaction in the outputs is permanent — that's the point; your originals stay untouched</li>
+  </ul>
+
+  <a class="cta" href="https://binbinster.gumroad.com/l/redactready-pdf-redaction-leak-check">Redact it properly — $29 once</a>
+  <p class="fine">Windows desktop app. No subscription, no account, no upload. Sample document included.</p>
+</div>
+</body>
+</html>
